@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "assert": "^1.4.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.6",
     "morgan": "^1.8.1"
   },
   "devDependencies": {},
