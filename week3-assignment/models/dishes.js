@@ -5,10 +5,6 @@ require('mongoose-currency').loadType(mongoose);
 var Currency = mongoose.Types.Currency;
 
 var commentSchema = new Schema({
-  author: {
-    type: String,
-    required: true
-  },
   rating: {
     type: Number,
     required: true,
@@ -18,6 +14,10 @@ var commentSchema = new Schema({
   comment: {
     type: String,
     required: true
+  },
+  postedBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
   }
 }, {
   timestamps: true
